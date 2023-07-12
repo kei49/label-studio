@@ -1,0 +1,4 @@
+from label_studio.project import create_new_project_with_azure_blob_storage
+
+
+create_new_project_with_azure_blob_storage()
