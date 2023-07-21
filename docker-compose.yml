@@ -4,7 +4,7 @@ services:
     image: postgres:14
     container_name: label-studio-db
     ports:
-      - 5434:5432
+      - 5432:5432
     volumes:
       - psql-store:/var/lib/postgresql/data
     environment:
