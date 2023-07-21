@@ -6,10 +6,14 @@ services:
     ports:
       - 5434:5432
     volumes:
-      - db-store:/var/lib/postgresql/data
+      - psql-store:/var/lib/postgresql/data
     environment:
       - DATABASE_URL=postgres://postgres:password@db:5432/labelstudio
       - POSTGRES_DB=labelstudio
       - POSTGRES_PASSWORD=password
     networks:
       - default_network
+volumes:
+  psql-store:
+networks:
+  default_network:
